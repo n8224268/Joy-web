@@ -1,0 +1,534 @@
+.box_for_card {
+  background: #fff;
+  margin: 30px 0px 100px 0px;
+  padding: 12.5px;
+  border-radius: 10px;
+  border: 10px dashed #d02137;
+}
+
+.card1 {
+  width: 320px;
+  height: 192px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #1C2A56;
+  margin: 60px auto 0 auto;
+  box-shadow: 0px 4px 4px grey;
+  overflow: hidden;
+}
+.card1 .card1-namebox {
+  width: auto;
+  height: 90px;
+  padding-top: 10px;
+}
+.card1 h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: -10px;
+  color: #F0906F;
+}
+.card1 h3 {
+  text-align: center;
+  font-size: 12px;
+  color: #F0906F;
+}
+.card1 hr {
+  height: 2px;
+  background-color: #F0906F;
+  border: 0;
+}
+.card1 .info1 {
+  text-align: center;
+  font-size: 10px;
+  margin-top: 20px;
+  color: #F0906F;
+}
+
+.card2 {
+  width: 320px;
+  height: auto;
+  margin: 30px auto 60px auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px grey;
+  overflow: hidden;
+}
+.card2 .card2-top {
+  width: 320px;
+  height: 132px;
+  border-radius: 12px 12px 0 0;
+  box-sizing: border-box;
+  padding: 80px 25px 10px 25px;
+  background-color: #F0906F;
+}
+.card2 .card2-top h1 {
+  font-size: 24px;
+  display: inline-block;
+  color: #FCFBE0;
+}
+.card2 .card2-top h3 {
+  font-size: 12px;
+  display: inline-block;
+  color: #FCFBE0;
+}
+.card2 .card2-bottom {
+  width: 320px;
+  height: 60px;
+  border-radius: 0 0 12px 12px;
+  box-sizing: border-box;
+  padding: 10px 25px 10px 25px;
+  background-color: #1C2A56;
+}
+.card2 .info2 {
+  font-size: 10px;
+  color: #F0906F;
+}
+
+@media only screen and (max-width: 424px) {
+  .card1, .card2 {
+    transform: translate(-18.5%, 40%) rotate(90deg);
+    transform-origin: 50% 50%;
+    margin: 0px;
+    margin: 0px 0px 160px 13%;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .card1, .card2 {
+    transform: translate(-18.5%, 40%) rotate(90deg);
+    transform-origin: 50% 50%;
+    margin: 0px;
+    margin: 0px 0px 160px 0px;
+  }
+}
+.haxagon {
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hax1 {
+  width: 100px;
+  height: 87px;
+  background-color: #F0906F;
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  transform: rotate(20deg);
+  animation: hex-rotate 5s infinite;
+  animation-delay: -2s;
+}
+
+.hax1-cut {
+  width: 90px;
+  height: 78.3px;
+  background-color: #1C2A56;
+  position: absolute;
+  top: -16px;
+  left: -25px;
+  transform: rotate(20deg);
+  animation: hex-rotate 5s infinite;
+  animation-delay: -2s;
+}
+
+.hax2 {
+  width: 50px;
+  height: 43.5px;
+  background-color: #F0906F;
+  position: absolute;
+  bottom: -10px;
+  right: -15px;
+  transform: rotate(-10deg);
+  animation: hex-rotate 4s infinite;
+}
+
+.hax2-cut {
+  width: 42.5px;
+  height: 36.975px;
+  background-color: #1C2A56;
+  position: absolute;
+  bottom: -6.5px;
+  right: -11.5px;
+  transform: rotate(-10deg);
+  animation: hex-rotate 4s infinite;
+}
+
+@keyframes hex-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.card1:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0px 7px 6px grey;
+}
+
+.tree {
+  position: absolute;
+  bottom: 61px;
+  right: 10px;
+  animation: tree-shake 6s infinite;
+}
+
+.root {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.bsnow {
+  width: 25px;
+  height: 21.75px;
+  background-color: #FCFBE0;
+  position: absolute;
+  top: -7px;
+  left: 30px;
+  transform: rotate(35deg);
+}
+
+.ssnow {
+  width: 12.5px;
+  height: 10.875px;
+  background-color: #FCFBE0;
+  position: absolute;
+  transform: rotate(15deg);
+}
+
+.card2:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0px 7px 6px grey;
+}
+
+.sf1 {
+  animation: snow-fall-bh1 4s infinite;
+  animation-timing-function: linear;
+  top: -40px;
+  right: -50px;
+}
+
+@keyframes snow-fall-bh1 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 200px) rotate(323deg);
+  }
+}
+.sf2 {
+  animation: snow-fall-bh2 5.3s infinite;
+  animation-timing-function: linear;
+  top: -40px;
+  right: 35px;
+}
+
+@keyframes snow-fall-bh2 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 200px) rotate(318deg);
+  }
+}
+.sf3 {
+  animation: snow-fall-bh3 3.5s infinite;
+  animation-timing-function: linear;
+  top: -40px;
+  right: 65px;
+}
+
+@keyframes snow-fall-bh3 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 200px) rotate(352deg);
+  }
+}
+.sf4 {
+  animation: snow-fall-bh4 5s infinite;
+  animation-timing-function: linear;
+  top: -40px;
+  right: 95px;
+}
+
+@keyframes snow-fall-bh4 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 200px) rotate(339deg);
+  }
+}
+.sf5 {
+  animation: snow-fall-bh5 4s infinite;
+  animation-timing-function: linear;
+  top: -40px;
+  right: 125px;
+}
+
+@keyframes snow-fall-bh5 {
+  0% {
+    transform: translate(-80px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 200px) rotate(306deg);
+  }
+}
+.st1 {
+  animation: snow-fall-ontree1 6s infinite;
+  animation-timing-function: linear;
+  top: -100px;
+  right: 10px;
+}
+
+@keyframes snow-fall-ontree1 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  30% {
+    transform: translate(0, 180px) rotate(360deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 180px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 180px);
+  }
+}
+.st2 {
+  animation: snow-fall-ontree2 6s infinite;
+  animation-timing-function: linear;
+  top: -100px;
+  right: 23px;
+}
+
+@keyframes snow-fall-ontree2 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  70% {
+    transform: translate(0, 160px) rotate(345deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 160px) rotate(345deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 160px) rotate(345deg);
+  }
+}
+.st3 {
+  animation: snow-fall-ontree3 6s infinite;
+  animation-timing-function: linear;
+  top: -40px;
+  right: 36px;
+}
+
+@keyframes snow-fall-ontree3 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 110px) rotate(323deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 110px) rotate(323deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 110px) rotate(323deg);
+  }
+}
+.st4 {
+  animation: snow-fall-ontree4 6s infinite;
+  animation-timing-function: linear;
+  top: -100px;
+  right: 49px;
+}
+
+@keyframes snow-fall-ontree4 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  54% {
+    transform: translate(0, 175px) rotate(356deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 175px) rotate(356deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 175px) rotate(356deg);
+  }
+}
+.st5 {
+  animation: snow-fall-ontree5 6s infinite;
+  animation-timing-function: linear;
+  top: -100px;
+  right: 62px;
+}
+
+@keyframes snow-fall-ontree5 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  60% {
+    transform: translate(0, 145px) rotate(320deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 145px) rotate(320deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 145px) rotate(320deg);
+  }
+}
+.st6 {
+  animation: snow-fall-ontree6 6s infinite;
+  animation-timing-function: linear;
+  top: -100px;
+  right: 75px;
+}
+
+@keyframes snow-fall-ontree6 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  55% {
+    transform: translate(0, 170px) rotate(309deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 170px) rotate(309deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 170px) rotate(309deg);
+  }
+}
+.st7 {
+  animation: snow-fall-ontree7 6s infinite;
+  animation-timing-function: linear;
+  top: -40px;
+  right: 88px;
+}
+
+@keyframes snow-fall-ontree7 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  30% {
+    transform: translate(0, 100px) rotate(304deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 100px) rotate(304deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 100px) rotate(304deg);
+  }
+}
+.st8 {
+  animation: snow-fall-ontree8 6s infinite;
+  animation-timing-function: linear;
+  top: -100px;
+  right: 101px;
+}
+
+@keyframes snow-fall-ontree8 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 180px) rotate(351deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 180px) rotate(351deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 180px) rotate(351deg);
+  }
+}
+.st9 {
+  animation: snow-fall-ontree9 6s infinite;
+  animation-timing-function: linear;
+  top: -100px;
+  right: 114px;
+}
+
+@keyframes snow-fall-ontree9 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  60% {
+    transform: translate(0, 160px) rotate(307deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 160px) rotate(307deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 160px) rotate(307deg);
+  }
+}
+.st10 {
+  animation: snow-fall-ontree10 6s infinite;
+  animation-timing-function: linear;
+  top: -100px;
+  right: 127px;
+}
+
+@keyframes snow-fall-ontree10 {
+  0% {
+    transform: translate(-100px, 0) rotate(0deg);
+  }
+  70% {
+    transform: translate(0, 180px) rotate(341deg);
+  }
+  85% {
+    opacity: 100;
+    transform: translate(0, 180px) rotate(341deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 180px) rotate(341deg);
+  }
+}
+@keyframes tree-shake {
+  0% {
+    transform-origin: 50% 100%;
+    transform: rotate(0deg);
+  }
+  85% {
+    transform-origin: 50% 100%;
+    transform: rotate(0deg);
+  }
+  88% {
+    transform-origin: 50% 100%;
+    transform: rotate(-10deg);
+  }
+  91% {
+    transform-origin: 50% 100%;
+    transform: rotate(10deg);
+  }
+  94% {
+    transform-origin: 50% 100%;
+    transform: rotate(-5deg);
+  }
+  97% {
+    transform-origin: 50% 100%;
+    transform: rotate(5deg);
+  }
+  100% {
+    transform-origin: 50% 100%;
+  }
+}

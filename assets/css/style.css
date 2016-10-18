@@ -1,0 +1,102 @@
+.bg_red {
+  background-image: url(../img/bg_red.png);
+  background-repeat: repeat-x;
+  background-color: #d02137;
+}
+
+.wrapper {
+  background-color: #143863;
+}
+
+h2 {
+  color: #fff7ab;
+}
+
+.navbar_style {
+  background-color: #fff;
+  border-radius: 0px;
+  border: 0px !important;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #fff !important;
+}
+
+.navbar ul {
+  background-color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .navbar ul {
+    border-top: 1px solid #ccc;
+  }
+}
+.navbar ul li a {
+  color: #333;
+}
+
+.white_plate {
+  background-color: #fff;
+  box-shadow: 0px 20px 70px rgba(51, 51, 51, 0.5);
+}
+
+.footer {
+  background-color: #1b0f1c;
+}
+.footer ul a {
+  color: #fff;
+}
+
+.right {
+  background-color: #000;
+}
+
+.top_cartoon {
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .top_cartoon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+.mybtn {
+  display: inline-block;
+  border-radius: 0px;
+  background-color: #1e8787;
+  color: #fff;
+}
+
+.bt1 {
+  z-index: 10;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+}
+.bt1:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0e3d3c;
+}
+.bt1:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bt2 {
+  border: 2px solid #fff;
+  z-index: 10;
+  width: 150px;
+  height: 50px;
+  line-height: 45px;
+}
+.bt2:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0e3d3c;
+}
+.bt2:active {
+  color: #fff;
+  text-decoration: none;
+}
