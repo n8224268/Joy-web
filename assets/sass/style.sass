@@ -1,0 +1,76 @@
+$c-green: #1e8787 
+$c-deeper-green: #0e3d3c
+$c-blue: #143863
+$c-yellow: #fff7ab
+$c-purple: #1b0f1c
+$c-red: #d02137
+@mixin size($w,$h)
+	width: $w
+	height: $h
+
+.bg_red
+	background-image: url(../img/bg_red.png)
+	background-repeat: repeat-x
+	background-color: #d02137
+.wrapper
+	background-color: $c-blue
+h2
+	color: $c-yellow
+.navbar_style
+	background-color: #fff
+	border-radius: 0px
+	border: 0px !important
+.navbar-default .navbar-collapse
+	border-color: #fff !important
+.navbar ul
+	background-color: #fff
+	@media only screen and (max-width: 768px)
+		border-top: 1px solid #ccc
+	& li a
+		color: #333
+.white_plate
+	background-color: #fff
+	box-shadow: 0px 20px 70px rgba(20%,20%,20%,0.5)
+.footer
+	background-color: $c-purple
+	& ul a
+		color: #fff
+.right
+	background-color: #000
+
+.top_cartoon
+	position: absolute
+@media only screen and (max-width: 768px)
+	.top_cartoon
+		position: absolute
+		top: 10px
+		left: 10px
+
+.mybtn
+	display: inline-block
+	border-radius: 0px
+	background-color: $c-green
+	color: #fff
+.bt1
+	z-index: 10
+	+size(130px,40px)
+	line-height: 40px
+	&:hover
+		text-decoration: none
+		color: #fff
+		background-color: $c-deeper-green
+	&:active
+		color: #fff 
+		text-decoration: none
+.bt2
+	border: 2px solid #fff
+	z-index: 10
+	+size(150px,50px)
+	line-height: 45px
+	&:hover
+		text-decoration: none
+		color: #fff
+		background-color: $c-deeper-green
+	&:active
+		color: #fff 
+		text-decoration: none 

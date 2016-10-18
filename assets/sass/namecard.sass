@@ -1,0 +1,404 @@
+$color-blue: #1C2A56
+$color-orange: #F0906F
+$color-white: #FCFBE0
+
+@mixin size($w, $h)
+	width: $w
+	height: $h
+@mixin bgc($c)
+	background-color: $c
+.box_for_card
+	background: #fff
+	margin: 30px 0px 100px 0px
+	padding: 12.5px
+	border-radius: 10px
+	border: 10px dashed #d02137
+.card1
+	+size(320px, 192px)
+	box-sizing: border-box
+	padding: 10px
+	+bgc($color-blue)
+	margin: 60px auto 0 auto
+	box-shadow: 0px 4px 4px grey
+	overflow: hidden
+
+	& .card1-namebox
+		+size(auto,90px)
+		padding-top: 10px
+
+	& h1
+		text-align: center
+		font-size: 24px
+		margin-bottom: -10px
+		color: $color-orange
+
+	& h3
+		text-align: center
+		font-size: 12px
+		color: $color-orange
+
+	& hr
+		height: 2px
+		+bgc($color-orange)
+		border: 0
+
+	& .info1
+		text-align: center
+		font-size: 10px
+		margin-top: 20px
+		color: $color-orange
+.card2
+	+size(320px,auto)
+	margin: 30px auto 60px auto
+	border-radius: 12px
+	box-shadow: 0px 4px 4px grey
+	overflow: hidden
+
+	& .card2-top
+		+size(320px,132px)
+		border-radius: 12px 12px 0 0
+		box-sizing: border-box
+		padding: 80px 25px 10px 25px
+		+bgc($color-orange)
+
+		& h1
+			font-size: 24px
+			display: inline-block
+			color: $color-white
+		
+		& h3
+			font-size: 12px
+			display: inline-block
+			color: $color-white
+		
+	& .card2-bottom
+		+size(320px,60px)
+		border-radius: 0 0 12px 12px
+		box-sizing: border-box
+		padding: 10px 25px 10px 25px
+		+bgc($color-blue)
+	& .info2
+		font-size: 10px
+		color: $color-orange
+@media only screen and (max-width: 424px)
+	.card1, .card2
+		transform: translate(-18.5%, 40%) rotate(90deg)
+		transform-origin: 50% 50%
+		margin: 0px
+		margin: 0px 0px 160px 13%
+@media only screen and (max-width: 374px)
+	.card1, .card2
+		transform: translate(-18.5%, 40%) rotate(90deg)
+		transform-origin: 50% 50%
+		margin: 0px
+		margin: 0px 0px 160px 0px
+
+
+.haxagon
+	-webkit-clip-path: polygon(25% 0%, 75% 0%,100% 50%,75% 100%,25% 100%,0% 50%)
+.hax1
+	+size(100px, 87px)
+	+bgc($color-orange)
+	position: absolute
+	top: -20px
+	left: -30px
+	transform: rotate(20deg)
+	animation: hex-rotate 5s infinite
+	animation-delay: -2s
+.hax1-cut
+	+size(90px, 78.3px)
+	+bgc($color-blue)
+	position: absolute
+	top: -16px
+	left: -25px
+	transform: rotate(20deg)
+	animation: hex-rotate 5s infinite
+	animation-delay: -2s
+.hax2
+	+size(50px, 43.5px)
+	+bgc($color-orange)
+	position: absolute
+	bottom: -10px
+	right: -15px
+	transform: rotate(-10deg)
+	animation: hex-rotate 4s infinite
+.hax2-cut
+	+size(42.5px, 36.975px)
+	+bgc($color-blue)
+	position: absolute
+	bottom: -6.5px
+	right: -11.5px
+	transform: rotate(-10deg)
+	animation: hex-rotate 4s infinite
+@keyframes hex-rotate
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+.card1:hover
+	transform: translate(0,-5px)
+	box-shadow: 0px 7px 6px grey
+
+
+.tree
+	position: absolute
+	bottom: 61px
+	right: 10px
+	animation: tree-shake 6s infinite
+.root
+	position: absolute
+	bottom: 10px
+	right: 10px
+
+
+.bsnow
+	+size(25px, 21.75px)
+	+bgc($color-white)
+	position: absolute
+	top: -7px
+	left: 30px
+	transform: rotate(35deg)
+.ssnow
+	+size(12.5px, 10.875px)
+	+bgc($color-white)
+	position: absolute
+	transform: rotate(15deg)
+
+
+.card2:hover
+	transform: translate(0,-5px)
+	box-shadow: 0px 7px 6px grey
+
+.sf1
+	animation: snow-fall-bh1 4s infinite
+	animation-timing-function: linear
+	top: -40px
+	right: -50px
+@keyframes snow-fall-bh1
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	100%
+		transform: translate(0,200px) rotate(323deg)
+.sf2
+	animation: snow-fall-bh2 5.3s infinite
+	animation-timing-function: linear
+	top: -40px
+	right: 35px
+@keyframes snow-fall-bh2
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	100%
+		transform: translate(0,200px) rotate(318deg)
+.sf3
+	animation: snow-fall-bh3 3.5s infinite
+	animation-timing-function: linear
+	top: -40px
+	right: 65px
+@keyframes snow-fall-bh3
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	100%
+		transform: translate(0,200px) rotate(352deg)
+.sf4
+	animation: snow-fall-bh4 5s infinite
+	animation-timing-function: linear
+	top: -40px
+	right: 95px
+@keyframes snow-fall-bh4
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	100%
+		transform: translate(0,200px) rotate(339deg)
+.sf5
+	animation: snow-fall-bh5 4s infinite
+	animation-timing-function: linear
+	top: -40px
+	right: 125px
+@keyframes snow-fall-bh5
+	0%
+		transform: translate(-80px,0) rotate(0deg)
+	100%
+		transform: translate(0,200px) rotate(306deg)
+
+.st1
+	animation: snow-fall-ontree1 6s infinite
+	animation-timing-function: linear
+	top: -100px
+	right: 10px
+@keyframes snow-fall-ontree1
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	30%
+		transform: translate(0,180px) rotate(360deg)
+	85%
+		opacity: 100
+		transform: translate(0,180px)
+	100%
+		opacity: 0
+		transform: translate(0,180px)	
+.st2
+	animation: snow-fall-ontree2 6s infinite
+	animation-timing-function: linear
+	top: -100px
+	right: 23px
+@keyframes snow-fall-ontree2
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	70%
+		transform: translate(0,160px) rotate(345deg)
+	85%
+		opacity: 100
+		transform: translate(0,160px) rotate(345deg)
+	100%
+		opacity: 0
+		transform: translate(0,160px) rotate(345deg)
+.st3
+	animation: snow-fall-ontree3 6s infinite
+	animation-timing-function: linear
+	top: -40px
+	right: 36px
+@keyframes snow-fall-ontree3
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	50%
+		transform: translate(0,110px) rotate(323deg)
+	85%
+		opacity: 100
+		transform: translate(0,110px) rotate(323deg)
+	100%
+		opacity: 0
+		transform: translate(0,110px) rotate(323deg)
+.st4
+	animation: snow-fall-ontree4 6s infinite
+	animation-timing-function: linear
+	top: -100px
+	right: 49px
+@keyframes snow-fall-ontree4
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	54%
+		transform: translate(0,175px) rotate(356deg)
+	85%
+		opacity: 100
+		transform: translate(0,175px) rotate(356deg)
+	100%
+		opacity: 0
+		transform: translate(0,175px) rotate(356deg)
+.st5
+	animation: snow-fall-ontree5 6s infinite
+	animation-timing-function: linear
+	top: -100px
+	right: 62px
+@keyframes snow-fall-ontree5
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	60%
+		transform: translate(0,145px) rotate(320deg)
+	85%
+		opacity: 100
+		transform: translate(0,145px) rotate(320deg)
+	100%
+		opacity: 0
+		transform: translate(0,145px) rotate(320deg)
+.st6
+	animation: snow-fall-ontree6 6s infinite
+	animation-timing-function: linear
+	top: -100px
+	right: 75px
+@keyframes snow-fall-ontree6
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	55%
+		transform: translate(0,170px) rotate(309deg)
+	85%
+		opacity: 100
+		transform: translate(0,170px) rotate(309deg)
+	100%
+		opacity: 0
+		transform: translate(0,170px) rotate(309deg)
+.st7
+	animation: snow-fall-ontree7 6s infinite
+	animation-timing-function: linear
+	top: -40px
+	right: 88px
+@keyframes snow-fall-ontree7
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	30%
+		transform: translate(0,100px) rotate(304deg)
+	85%
+		opacity: 100
+		transform: translate(0,100px) rotate(304deg)
+	100%
+		opacity: 0
+		transform: translate(0,100px) rotate(304deg)
+.st8
+	animation: snow-fall-ontree8 6s infinite
+	animation-timing-function: linear
+	top: -100px
+	right: 101px
+@keyframes snow-fall-ontree8
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	50%
+		transform: translate(0,180px) rotate(351deg)
+	85%
+		opacity: 100
+		transform: translate(0,180px) rotate(351deg)
+	100%
+		opacity: 0
+		transform: translate(0,180px) rotate(351deg)
+.st9
+	animation: snow-fall-ontree9 6s infinite
+	animation-timing-function: linear
+	top: -100px
+	right: 114px
+@keyframes snow-fall-ontree9
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	60%
+		transform: translate(0,160px) rotate(307deg)
+	85%
+		opacity: 100
+		transform: translate(0,160px) rotate(307deg)
+	100%
+		opacity: 0
+		transform: translate(0,160px) rotate(307deg)
+.st10
+	animation: snow-fall-ontree10 6s infinite
+	animation-timing-function: linear
+	top: -100px
+	right: 127px
+@keyframes snow-fall-ontree10
+	0%
+		transform: translate(-100px,0) rotate(0deg)
+	70%
+		transform: translate(0,180px) rotate(341deg)
+	85%
+		opacity: 100
+		transform: translate(0,180px) rotate(341deg)
+	100%
+		opacity: 0
+		transform: translate(0,180px) rotate(341deg)
+
+@keyframes tree-shake
+	0%
+		transform-origin: 50% 100%
+		transform: rotate(0deg)
+	85%
+		transform-origin: 50% 100%
+		transform: rotate(0deg)
+	88%
+		transform-origin: 50% 100%
+		transform: rotate(-10deg)
+	91%
+		transform-origin: 50% 100%
+		transform: rotate(10deg)
+	94%
+		transform-origin: 50% 100%
+		transform: rotate(-5deg)
+	97%
+		transform-origin: 50% 100%
+		transform: rotate(5deg)
+	100%
+		transform-origin: 50% 100%

@@ -1,0 +1,149 @@
+@charset "UTF-8"
+*
+	font-family: 微軟正黑體
+	// border: 1px solid black
+	position: relative
+
+@mixin size($w,$h)
+	width: $w
+	height: $h
+
+
+h2
+	font-size: 20px
+	margin-bottom: 20px
+p
+	font-size: 16px
+h3
+	font-size: 24px
+.navbar
+	+size(100%,70px)
+	margin-bottom: 0px
+	z-index: 1000
+	position: fixed
+	top: 0
+	& ul
+		@media only screen and (max-width: 768px)
+			margin: 0px 30px
+	& ul li
+		width: 120px
+	& ul li a
+		font-size: 20px
+		@media only screen and (min-width: 768px)
+			text-align: center
+.box_padding
+	padding: 20px
+.box_padding_0
+	padding: 0px
+.box_margin_0
+	margin: 0px
+.box_margin_top_20
+	margin-top: 20px
+.box_margin_top_10
+	margin-top: 10px
+.box_margin_bottom_20
+	margin-bottom: 20px
+.box_margin_bottom_40
+	margin-bottom: 40px
+.box_margin_top_40
+	margin-top: 40px
+.center
+	margin-left: auto
+	margin-right: auto
+	display: -webkit-flex
+	display: flex
+	-webkit-align-items: center
+	align-items: center
+	-webkit-justify-content: center
+	justify-content: center
+
+
+
+.header--fixed
+	position: fixed
+	z-index: 100
+	right: 0
+	left: 0
+	top: 0
+.headroom
+	height: 70px
+	background-color: black
+	will-change: transform
+	transition: transform 200ms linear
+.headroom--pinned 
+	transform: translateY(0%)
+.headroom--unpinned 
+	transform: translateY(-100%)
+.top_logo
+	z-index: 1000
+	margin-top: 10px
+	margin-left: 10px
+	height: 50px
+
+.draw_board
+	+size(100%,100%)
+	margin: 0px 0px 20px 0px
+.graph_set
+	margin-top: 130px
+
+
+.blank1
+	height: 365px
+.collection_box
+	overflow: hidden
+	padding: 3px
+@media only screen and (min-width: 1200px)
+	.collection_box
+		+size(80%,auto)
+		margin-right: auto
+		margin-left: auto
+@media only screen and (max-width: 1200px)
+	.collection_box
+		+size(80%,auto)
+		margin-right: auto
+		margin-left: auto
+@media only screen and (max-width: 992px)
+	.collection_box
+		+size(80%,auto)
+		margin-right: auto
+		margin-left: auto
+@media only screen and (max-width: 768px)
+	.collection_box
+		+size(80%,auto)
+		overflow: hidden
+		margin-right: auto
+		margin-left: auto
+@media only screen and (max-width: 544px)
+	.collection_box
+		+size(auto,auto)
+		overflow: hidden
+		margin-right: auto
+		margin-left: auto
+	
+.blank2
+	height: 1135px
+
+
+.footer
+	+size(100%,100%)
+	& ul
+		list-style: none
+		margin: 0px 0px 20px 0px
+		padding: 0px
+		& li
+			box-sizing: border-box
+			width: 100px
+			display: inline-block
+		& a
+			color: black
+			text-decoration: none
+			font-size: 18px
+	& p
+		margin-bottom: 0px
+		line-height: 40px
+		font-size: 18px
+
+
+.earth
+	padding: 25px
+

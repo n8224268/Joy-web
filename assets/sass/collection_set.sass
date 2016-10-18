@@ -1,0 +1,95 @@
+$c-green: #1e8787 
+$c-deeper-green: #0e3d3c
+$c-blue: #143863
+$c-yellow: #fff7ab
+$c-purple: #1b0f1c
+$c-red: #d02137
+@mixin size($w,$h)
+	width: $w
+	height: $h
+// footer adjust
+.footer
+	max-width: 100%
+	padding: 0px
+	margin: 0px
+.right
+	max-width: 100%
+	padding: 0px
+	margin: 0px
+
+// start main
+.title_for_collection
+	font-size: 30px
+	color: $c-yellow
+	text-align: center
+	margin: 0px 0px 30px 0px
+	padding-top: 150px
+.box_for_grid
+	margin: 0 6%
+	padding: 20px
+@media only screen and (max-width: 768px)
+	.box_for_grid
+		margin: 0 6%
+		padding: 20px 0px
+.grid
+	background-color: $c-blue
+.grid-sizer
+	width: 22.5%
+.grid-item
+	width: 22.5%
+	margin: 0px 1% 20px 1%
+	height: auto
+	border: 0px
+	border-radius: 0px
+	background-color: #fff
+	& .art_intro
+		display: block
+		background-color: $c-red
+		color: #fff
+		line-height: 40px
+		padding-left: 12px
+.art_img
+	padding: 10px 10px 0px 10px
+.grid-item--width2
+	width: 47%
+	padding: 10px
+	margin: 1%
+
+
+	
+@media only screen and (max-width: 992px)
+	.grid-sizer
+		width: 30%
+	.grid-item
+		width: 30%
+@media only screen and (max-width: 544px)
+	.grid-sizer
+		width: 45%
+	.grid-item
+		width: 45%
+		margin: 0px 2.5% 20px 2.5%
+
+
+.popup_content_box
+	width: 700px
+	margin: 60px 0px
+	// width: 700px
+	background-color: #fff
+	padding: 20px
+@media only screen and (max-width: 992px)
+	.popup_content_box
+		width: 500px
+@media only screen and (max-width: 544px)
+	.popup_content_box
+		width: 300px
+.popup_content_img
+	width: 100%
+.popup_close_btn
+	display: block
+	float: right
+	+size(30px,30px)
+	color: #fff
+	font-weight: 800
+	border: none
+	background-color: $c-green
+	margin-bottom: 10px
